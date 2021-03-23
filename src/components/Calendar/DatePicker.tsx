@@ -38,20 +38,6 @@ export const DatePicker: FC<CalendarDatePickerProps> = ({
     setChosenDate(moment(calendar).date(parseInt(e.target.innerHTML, 10)));
   };
 
-  const prevMonthDateClick = (e) => {
-    setChosenDate(
-      moment(calendar).add(-1, 'M').date(parseInt(e.target.innerHTML, 10))
-    );
-    setCalendar(moment(calendar).add(-1, 'M').startOf('month'));
-  };
-
-  const nextMonthDateClick = (e) => {
-    setChosenDate(
-      moment(calendar).add(1, 'M').date(parseInt(e.target.innerHTML, 10))
-    );
-    setCalendar(moment(calendar).add(1, 'M').startOf('month'));
-  };
-
   const renderDates = () => {
     const dates: any = [];
 
@@ -63,7 +49,7 @@ export const DatePicker: FC<CalendarDatePickerProps> = ({
     for (let i = 0; i < monthFirstDayWeekday; i += 1) {
       dates.unshift(
         <li key={`unfocused-prev-${i}`} className="date">
-          <div className="unfocused" onClick={prevMonthDateClick}>
+          <div className="unfocused" onClick={handleMonthLeftClick}>
             {lastMonthDayCount - i}
           </div>
         </li>
@@ -100,7 +86,7 @@ export const DatePicker: FC<CalendarDatePickerProps> = ({
     while (dates.length % 7 !== 0 || dates.length / 7 < 6) {
       dates.push(
         <li key={`unfocused-next-${j}`} className="date">
-          <div className="unfocused" onClick={nextMonthDateClick}>
+          <div className="unfocused" onClick={handleMonthRightClick}>
             {j}
           </div>
         </li>
