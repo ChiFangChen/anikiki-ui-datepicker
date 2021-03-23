@@ -14,7 +14,7 @@
 
 ```ts
 import React, { FunctionComponent, useState } from 'react';
-import { DatePicker } from 'kui-datepicker';
+import { DatePicker } from 'anikiki-ui-datepicker';
 
 const App: FunctionComponent = () => {
   const [date, setDate] = useState<Date | null>(new Date());

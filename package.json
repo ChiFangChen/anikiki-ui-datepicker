@@ -1,6 +1,6 @@
 {
   "name": "anikiki-ui-datepicker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "build",
   "description": "A date picker component and a calendar created by Kiki Chen",
   "author": "Kiki",
