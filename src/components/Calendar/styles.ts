@@ -1,17 +1,14 @@
 import styled from 'styled-components';
 
 export const StyledCalendar = styled.div`
-  text-align: center;
   padding: 10px 0;
   user-select: none;
   background-color: white;
-  width: 300px;
-  margin: auto;
 
   .actions {
     display: flex;
     justify-content: space-between;
-    margin: 8px 24px;
+    margin: 8px 4%;
 
     button {
       border: none;

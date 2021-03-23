@@ -29,5 +29,16 @@ export const StyledDatePicker = styled.div`
     position: absolute;
     border: 1px solid #ddd;
     box-shadow: 0px 2px 6px 0px #ddd;
+    width: 300px;
+
+    @media (max-width: 767px) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: auto;
+    }
   }
 `;
