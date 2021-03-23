@@ -1,6 +1,6 @@
 {
   "name": "anikiki-ui-datepicker",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "build",
   "description": "A date picker component and a calendar created by Kiki Chen",
   "author": "Kiki",
@@ -8,6 +8,10 @@
   "files": [
     "build"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChiFangChen/anikiki-ui-datepicker.git"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
