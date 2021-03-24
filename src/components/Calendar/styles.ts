@@ -4,6 +4,7 @@ export const StyledCalendar = styled.div`
   padding: 10px 0;
   user-select: none;
   background-color: white;
+  text-align: center;
 
   .actions {
     display: flex;
