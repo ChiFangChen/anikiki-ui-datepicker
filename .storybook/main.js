@@ -9,7 +9,5 @@ module.exports = {
       actions: false,
       backgrounds: false,
     }
-  },
-    "@storybook/preset-create-react-app",
-  ]
+  }]
 }
